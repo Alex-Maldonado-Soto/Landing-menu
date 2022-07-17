@@ -1,31 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 62.5%;
+  font-family: "Epilogue", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
 :root {
---Almost-White: hsl(0, 0%, 98%);
---Medium-Gray: hsl(0, 0%, 41%);
---Almost-Black: hsl(0, 0%, 8%);
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
 }
 
 p {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--Medium-Gray);
-    font-family:'Epilogue', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--Medium-Gray);
+
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--Almost-Black);
-    font-family:'Epilogue', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--Almost-Black);
 }
 
-.header__img img {
-    width: 100%;
+button {
+  background-color: var(--Almost-Black);
+  padding: 9px 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--Almost-White);
+}
+
+.navMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header__text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.header__text p {
+  margin-top: 20px;
+  padding: 0 23px;
+}
+
+.header__hero {
+  width: 100vw;
+}
+
+.footerPatrocinior {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+}
+
+.footerPatrocinior img{
+   width: 70%;
 }

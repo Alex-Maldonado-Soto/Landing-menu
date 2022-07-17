@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <!-- <link rel="stylesheet" href="css/style.css"/> -->
-    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/mobile.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,20 +17,17 @@
   </head>
   <body>
     <header>
-      <picture class="header__img">
-        <img src="images/logo.svg" alt="Logo de snap" title="logo de snap" />
-      </picture>
+      <section class="navMobile">
+          <img src="images/logo.svg" alt="Logo de snap" title="logo de snap" />
+          <img
+            src="images/icon-menu.svg"
+            alt="Icono para abrir el menu"
+            title="menu"
+          />
+      </section>
+
       <section>
         <nav>
-          <div>
-            <picture>
-              <img
-                src="images/icon-menu.svg"
-                alt="Icono para abrir el menu"
-                title="menu"
-              />
-            </picture>
-          </div>
           <section>
             <a href=""></a>
             <a href=""></a>
@@ -41,39 +38,54 @@
       </section>
     </header>
 
-    <main>
+    <main class="header">
       <header>
         <picture>
           <source
             media="(min-width: 1440px)"
             srcset="images/image-hero-desktop.png"
           />
-          <img src="images/image-hero-mobile.png" alt="imagen de portada" />
+          <img
+            src="images/image-hero-mobile.png"
+            alt="imagen de portada"
+            class="header__hero"
+          />
         </picture>
       </header>
-      <section>
+      <section class="header__text">
         <h1>Make remote work</h1>
-        <p>get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
         <a href="">
           <button>Learn more</button>
         </a>
       </section>
 
       <footer>
-        <ul>
+        <ul class="footerPatrocinior">
           <li>
-            <img src="images/client-audiophile.svg" alt="logo de patrosinador audiophile">
+            <img
+              src="images/client-audiophile.svg"
+              alt="logo de patrosinador audiophile"
+            />
           </li>
           <li>
-            <img src="images/client-databiz.svg" alt="logo de patrosinador databiz">
+            <img
+              src="images/client-databiz.svg"
+              alt="logo de patrosinador databiz"
+            />
           </li>
           <li>
-            <img src="images/client-maker.svg" alt="logo de patrosinador maker">
+            <img
+              src="images/client-maker.svg"
+              alt="logo de patrosinador maker"
+            />
           </li>
           <li>
-            <img src="images/client-meet.svg" alt="logo de patrosinador meet">
+            <img src="images/client-meet.svg" alt="logo de patrosinador meet" />
           </li>
-
         </ul>
       </footer>
     </main>
