@@ -16,23 +16,108 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
+    <div id="div"></div>
     <header>
       <section class="navMobile">
-          <img src="images/logo.svg" alt="Logo de snap" title="logo de snap" />
-          <img
-            src="images/icon-menu.svg"
-            alt="Icono para abrir el menu"
-            title="menu"
-          />
+        <img src="images/logo.svg" alt="Logo de snap" title="logo de snap" />
+        <img
+          onclick="navbarReverse()"
+          src="images/icon-menu.svg"
+          alt="Icono para abrir el menu"
+          title="menu"
+        />
       </section>
 
-      <section>
+      <section class="navbar">
+        <picture class="navbar__closer" onclick="navbar()">
+          <img src="images/icon-close-menu.svg" alt="boton para cerrar menu" />
+        </picture>
         <nav>
-          <section>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+          <!-- <div class="list__button">
+            <img src="" alt="" class="list__img">
+            <a href="" class="nav__link">About</a>
+          </div> -->
+          <section class="navbar__opcions">
+            <ul>
+              <li class="list__item">
+                <div class="list__button list__button--click">
+                  <a href="" class="nav__link">Features</a>
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt="flecha hacia abajo"
+                    class="list__arrow"
+                  />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="" class="nav__link nav__link--inside">
+                      <div class="list__button">
+                        <img src="images/icon-todo.svg" alt="icon-todo" class="list__img">
+                        <a href="" class="nav__link">Todo list</a>
+                      </div> 
+                    </a>
+                  </li>
+                  <li class="list__inside">
+                    <a href="" class="nav__link nav__link--inside">
+                      <div class="list__button">
+                        <img src="images/icon-calendar.svg" alt="icono de calendario" class="list__img">
+                        <a href="" class="nav__link">Calendar</a>
+                      </div> 
+                    </a>
+                  </li>
+                  <li class="list__inside">
+                    <a href="" class="nav__link nav__link--inside">
+                      <div class="list__button">
+                        <img src="images/icon-reminders.svg" alt="icono de notificaciones" class="list__img">
+                        <a href="" class="nav__link">Reminders</a>
+                      </div> 
+                    </a>
+                  </li>
+                  <li class="list__inside">
+                    <a href="" class="nav__link nav__link--inside">
+                      <div class="list__button">
+                        <img src="images/icon-planning.svg" alt="icono de planeacion" class="list__img">
+                        <a href="" class="nav__link">Planning</a>
+                      </div> 
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li class="list__item">
+                <div class="list__button list__button--click">
+                  <a href="" class="nav__link">Company</a>
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt="flecha hacia abajo"
+                    class="list__arrow"
+                  />
+                </div>
+              </li>
+
+              <li class="list__item">
+                <div class="list__button">
+                  <a href="" class="nav__link">Careers</a>
+                </div>
+              </li>
+
+              <li class="list__item">
+                <div class="list__button">
+                  <img src="" alt="" class="list__img" />
+                  <a href="" class="nav__link">About</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="navbar__buttons">
+            <a href="">
+              <button>Login</button>
+            </a>
+            <a href="">
+              <button id="button__register">Register</button>
+            </a>
           </section>
         </nav>
       </section>
@@ -89,5 +174,10 @@
         </ul>
       </footer>
     </main>
+
+    <!--Script del gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!--Srcipt del navbar-->
+    <script src="javascript/navbar.js"></script>
   </body>
 </html>
