@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <!-- <link rel="stylesheet" href="css/style.css"/> -->
-    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1439px)" />
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1439px)" />
     <link
       rel="icon"
       type="image/png"
@@ -38,12 +39,13 @@
             <a href="" class="nav__link">About</a>
           </div> -->
           <section class="navbar__opcions">
-            <ul>
+            <ul class="navbar__list">
+              <li class="list__item" id="logoNav">
+                <img src="images/logo.svg" alt="Lodo de snap" />
+              </li>
+
               <li class="list__item">
-                <div
-                  class="list__button "
-                  onclick="menuDesplegable(feactures)"
-                >
+                <div class="list__button" onclick="menuDesplegable(feactures)">
                   <a class="nav__link">Features</a>
                   <img
                     src="images/icon-arrow-down.svg"
@@ -74,36 +76,29 @@
                     </div>
                   </li>
                   <li class="list__inside">
-    
-                      <div class="list__button">
-                        <img
-                          src="images/icon-reminders.svg"
-                          alt="icono de notificaciones"
-                          class="list__img"
-                        />
-                        <a href="" class="nav__link">Reminders</a>
-                      </div>
-       
+                    <div class="list__button">
+                      <img
+                        src="images/icon-reminders.svg"
+                        alt="icono de notificaciones"
+                        class="list__img"
+                      />
+                      <a href="" class="nav__link">Reminders</a>
+                    </div>
                   </li>
                   <li class="list__inside">
-                   
-                      <div class="list__button">
-                        <img
-                          src="images/icon-planning.svg"
-                          alt="icono de planeacion"
-                          class="list__img"
-                        />
-                        <a href="" class="nav__link">Planning</a>
-                      </div>
-            
+                    <div class="list__button">
+                      <img
+                        src="images/icon-planning.svg"
+                        alt="icono de planeacion"
+                        class="list__img"
+                      />
+                      <a href="" class="nav__link">Planning</a>
+                    </div>
                   </li>
                 </ul>
               </li>
               <li class="list__item">
-                <div
-                  class="list__button "
-                  onclick="menuDesplegable(company)"
-                >
+                <div class="list__button" onclick="menuDesplegable(company)">
                   <a class="nav__link">Company</a>
                   <img
                     src="images/icon-arrow-down.svg"
@@ -120,17 +115,13 @@
                   </li>
                   <li class="list__inside">
                     <div class="list__button">
-
                       <a href="" class="nav__link">Our Team</a>
                     </div>
                   </li>
                   <li class="list__inside">
-    
-                      <div class="list__button">
-
-                        <a href="" class="nav__link">Blog</a>
-                      </div>
-       
+                    <div class="list__button">
+                      <a href="" class="nav__link">Blog</a>
+                    </div>
                   </li>
                 </ul>
               </li>
@@ -146,8 +137,6 @@
                   <a href="" class="nav__link">About</a>
                 </div>
               </li>
-
-        
             </ul>
           </section>
           <section class="navbar__buttons">
@@ -185,33 +174,37 @@
         <a href="">
           <button>Learn more</button>
         </a>
+
+
+    <footer>
+      <ul class="footerPatrocinior">
+        <li>
+          <img
+            src="images/client-audiophile.svg"
+            alt="logo de patrosinador audiophile"
+          />
+        </li>
+        <li>
+          <img
+            src="images/client-databiz.svg"
+            alt="logo de patrosinador databiz"
+          />
+        </li>
+        <li>
+          <img
+            src="images/client-maker.svg"
+            alt="logo de patrosinador maker"
+          />
+        </li>
+        <li>
+          <img src="images/client-meet.svg" alt="logo de patrosinador meet" />
+        </li>
+      </ul>
+    </footer>
+    
       </section>
 
-      <footer>
-        <ul class="footerPatrocinior">
-          <li>
-            <img
-              src="images/client-audiophile.svg"
-              alt="logo de patrosinador audiophile"
-            />
-          </li>
-          <li>
-            <img
-              src="images/client-databiz.svg"
-              alt="logo de patrosinador databiz"
-            />
-          </li>
-          <li>
-            <img
-              src="images/client-maker.svg"
-              alt="logo de patrosinador maker"
-            />
-          </li>
-          <li>
-            <img src="images/client-meet.svg" alt="logo de patrosinador meet" />
-          </li>
-        </ul>
-      </footer>
+
     </main>
 
     <!--Script del gsap-->
